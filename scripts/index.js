@@ -4,7 +4,7 @@ import { handleSearch } from "./handle.js";
 //To get your api key using omdb api
 // you have to register your email with omdb api
 //after successful registration, api key will be sent to the registered gmail.
-const URL = "http://www.omdbapi.com/?apikey=467b36e9";
+const URL = "https://www.omdbapi.com/?apikey=467b36e9";
 export default URL;
 
 export async function generateMovies(url) {
