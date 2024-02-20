@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinephilia</title>
+    <script
+      src="https://kit.fontawesome.com/7ab43ae0b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/film-solid.svg"
+      type="image/x-icon"
+    />
+    <script defer src="./scripts/error.js"></script>
+    <script defer src="./scripts/index.js" type="module"></script>
+    <script defer src="./scripts/display.js" type="module"></script>
+    <script defer src="./scripts/createTags.js" type="module"></script>
+    <script defer src="./scripts/handle.js" type="module"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav id="desktop-nav">
+        <div class="logo">
+          <strong
+            ><i class="fa-solid fa-film fa-shake" style="color: #211951"></i>
+            Cinephilia</strong
+          >
+        </div>
+        <div>
+          <strong>
+            <ul class="nav-links">
+              <li><a href="#search1" class="active">Search</a></li>
+              <li><a href="#fav">Favourites</a></li>
+              <li><a href="#random">Trending</a></li>
+            </ul>
+          </strong>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">
+          <strong
+            ><i class="fa-solid fa-film fa-shake" style="color: #211951"></i>
+            Cinephilia</strong
+          >
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#search1" onclick="toggleMenu()">Search</a></li>
+            <li><a href="#fav" onclick="toggleMenu()">Favourites</a></li>
+            <li><a href="#random" onclick="toggleMenu()">Trending</a></li>
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <section id="search1">
+        <h1>Search a Movie or Web Series!!!</h1>
+        <form class="search-form">
+          <input
+            type="text"
+            name="movie"
+            id="search"
+            placeholder="Enter title to search............."
+            required
+          />
+          <button type="submit" class="search">Search</button>
+        </form>
+        <h2 class="hide">Search Results:</h2>
+        <div class="results"></div>
+      </section>
+      <section id="fav">
+        <h1>Your Favourites!!!</h1>
+        <div class="favs">
+          <h2>Add your favourite movies or series here...</h2>
+        </div>
+      </section>
+      <section id="random">
+        <h1>Trending Movies & Web Series!!!</h1>
+        <div class="random"></div>
+      </section>
+      <footer>
+        <p>Crafted and Developed By Dishant Balotra</p>
+      </footer>
+    </div>
+  </body>
+</html>
