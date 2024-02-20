@@ -8,7 +8,7 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-const URL = "http://www.omdbapi.com/?apikey=467b36e9";
+const URL = "https://www.omdbapi.com/?apikey=467b36e9";
 async function generateMovies(url) {
   const response = await fetch(url);
   const data = await response.json();
