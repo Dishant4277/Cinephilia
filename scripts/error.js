@@ -101,7 +101,6 @@ function displayMovies() {
     });
   }
 }
-displayMovies();
 
 document.querySelector(".search-form").addEventListener("submit", handleSearch);
 function handleSearch(event) {
